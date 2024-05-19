@@ -1,7 +1,7 @@
 from django.shortcuts import render
-# from django.http
+from django.http import response
 
 # Create your views here.
 
-def test(self):
-    return render("templates/index.html")
+def index(request):
+    return render(request, "home/index.html")

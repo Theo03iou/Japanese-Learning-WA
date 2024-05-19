@@ -1,7 +1,15 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}日本語{% endblock title %}
+{% block style %}static 'home/styles/base.css'{% endblock style %}
 
-{% comment %} add css later {% endcomment %}
+{% block title %}日本語{% endblock title %}
+{% block css_files %} <link rel="stylesheet" href="{% static "home/index.css" %}"> {% endblock %}
+{% block content %}
+
+<h1>THIS WORKS</h1>
+
+
+
+{% endblock content %}
 
