@@ -3,12 +3,18 @@
 
 {% block tile %}Flashcards{% endblock tile %}
 
-{% block css_files %}<link rel="stylesheet" href="cards/index.css">{% endblock css_files %}
+{% block css_files %}<link rel="stylesheet" href="{% static "cards/index.css" %}">{% endblock css_files %}
 
 {% block content %}
 
 <div class="card-container">
-    DEMO CARD
+    <div class="card-word"><h2>言葉</h2></div>
+    <div class="card-translation"><h2>Word</h2></div> {% comment %} SHOULD ONLY APPEAR WHEN CARD PRESSED  {% endcomment %}
+    <div class="card-sentence"><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore quasi earum dolores cumque praesentium error in ex? Pariatur repellat nemo dignissimos quam dolorem omnis in necessitatibus fugit nihil cum!</h3></div>
+    <div class="card-picture">
+        <img src="#" alt="card-word">
+    </div>
+    <button>Show Answer</button>
 </div>
 
 {% endblock content %}

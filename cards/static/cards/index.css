@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+}
+
+.card-container {
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto; /* Center the card horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text content */
+}
+
+.card-container h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-word, .card-translation, .card-sentence {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    display: none; /* Hide all text content initially */
+}
+
+.card-picture {
+    display: none;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.showing-answer .card-word, .showing-answer .card-translation, .showing-answer .card-sentence {
+    display: block; /* Show text content when 'showing-answer' class is applied */
+}
+
+.showing-answer .card-picture {
+    display: block; /* Show image when 'showing-answer' class is applied */
+}
+
+.card-word {
+    display: block;
+    text-align: center; /* Center the card word */
+}
