@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block style %}static 'home/styles/base.css'{% endblock style %}
-
 {% block title %}日本語{% endblock title %}
-{% block css_files %} <link rel="stylesheet" href="{% static "home/index.css" %}"> {% endblock %}
+
+{% block css_files %} 
+<link rel="stylesheet" href="{% static "home/index.css" %}"> 
+<link rel="stylesheet" href="{% static "app.css" %}">
+{% endblock %}
+
 {% block content %}
 
 <h1>THIS WORKS</h1>
